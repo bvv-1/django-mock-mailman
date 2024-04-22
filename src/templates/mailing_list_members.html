@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="mb-4">登録者一覧</h2>
+    <table class="table w-50">
+        <thead>
+            <tr>
+                <th>メールアドレス</th>
+                <th>登録日</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for member in members %}
+            <tr>
+                <td>{{ member.email }}</td>
+                <td>{{ member.subscribed_date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

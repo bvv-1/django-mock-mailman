@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="mb-4"><strong>件名:</strong> {{ email.subject }}</h2>
+    <p><strong>差出人:</strong> {{ email.sender }}</p>
+    <p>{{ email.sent_date }}</p>
+    <hr>
+    <p>{{ email.body }}</p>
+{% endblock %}

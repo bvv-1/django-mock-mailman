@@ -1,0 +1,19 @@
+{% load django_bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Mock Mailman</title>
+    <meta charset="utf-8">
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+  </head>
+  <body>
+    {% include 'navbar.html' %}
+    
+    <div class="container mt-4">
+        {% block content %}
+        {% endblock content %}
+    </div>
+  </body>
+</html>

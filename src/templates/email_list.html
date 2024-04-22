@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 class="mb-4">メール一覧</h2>
+    <table class="table w-75">
+        <thead>
+            <tr>
+                <th>件名</th>
+                <th>送信日時</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for email in emails %}
+            <tr>
+                <td>{{ email.subject }}</td>
+                <td>{{ email.sent_date }}</td>
+                <td><a href="/mails/{{ email.id }}">開く</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

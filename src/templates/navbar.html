@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container">
+      <ul class="nav justify-content-start">
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'subscribe' %}">新規登録</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'unsubscribe' %}">登録解除</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'members' %}">登録者一覧</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'send' %}">メール作成</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="{% url 'mails' %}">メール一覧</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
